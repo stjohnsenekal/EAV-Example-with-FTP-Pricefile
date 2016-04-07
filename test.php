@@ -1,5 +1,5 @@
 <?php
  
-echo "\nphp compiler on console working! \n";
+echo "\nphp interpreter on console working! \n";
 
 ?>
