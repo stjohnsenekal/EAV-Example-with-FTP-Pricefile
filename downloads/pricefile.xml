@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<PriceFileResponse>
+	<CompanyID>300</CompanyID>
+	<RequestType>1</RequestType>
+	<RequestVersion>1.0</RequestVersion>
+	<GUID>6B3DB45D-D6E7-46B8-D993-BAA80A49BDAE</GUID>
+	<RequestStatus>0</RequestStatus>
+	<ClientVer>1</ClientVer>
+	<ClientNo>2002000</ClientNo>
+	<AccNo>587</AccNo>
+	<PriceStamp>2013-10-31T05:05:03</PriceStamp>
+	<Currency>ZAR</Currency>
+	<Product>
+		<StockItemCode>1427006</StockItemCode>
+		<StockItemDescription>MEDICAL GRADE NEEDLES 10S</StockItemDescription>
+		<DateLastChanged>2013-10-28T00:00:00.000</DateLastChanged>
+		<EANCode>6006352020455</EANCode>
+		<Schedule>0</Schedule>
+		<Status>4</Status>
+		<Type>P</Type>
+		<Availability>0</Availability>
+		<Price>44.00</Price>
+		<DealDetail>
+			<DealNumber>16797</DealNumber>
+			<DealType>B</DealType>
+			<BreakQty>5</BreakQty>
+			<BonusQty>1</BonusQty>
+		</DealDetail>
+	</Product>
+	<Product>
+		<StockItemCode>1427005</StockItemCode>
+		<StockItemDescription>SLEEPING PILLS 20S</StockItemDescription>
+		<DateLastChanged>2013-10-01T00:00:00.000</DateLastChanged>
+		<EANCode>6006352020448</EANCode>
+		<Schedule>0</Schedule>
+		<Status>1</Status>
+		<Type>P</Type>
+		<Availability>100</Availability>
+		<Price>77.00</Price>
+		<DealDetail>
+			<DealNumber>16797</DealNumber>
+			<DealType>B</DealType>
+			<BreakQty>5</BreakQty>
+			<BonusQty>1</BonusQty>
+		</DealDetail>
+	</Product>
+	<Product>
+		<StockItemCode>1015246</StockItemCode>
+		<StockItemDescription>COUGH SYRUP 300ML</StockItemDescription>
+		<DateLastChanged>2012-02-09T00:00:00.000</DateLastChanged>
+		<EANCode>6009681160137</EANCode>
+		<NAPCode>897783007</NAPCode>
+		<Schedule>4</Schedule>
+		<Status>1</Status>
+		<Type>E</Type>
+		<Availability>100</Availability>
+		<Price>119.20</Price>
+	</Product>
+</PriceFileResponse>
