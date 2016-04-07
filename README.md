@@ -20,6 +20,8 @@ The structure of the codebase is as follows:
 - **Engine** The concrete classes for FTP, and SFTP will follow suit here.
 - **Adapters** Concrete product classes for CRUD operations on products.
 
+Please note that there are some custom attributes in the adapter (NAPPI, EAN, and Schedule), and these can be commented out if they cannot be installed as an extension.
+
 Installation
 -----------
 
