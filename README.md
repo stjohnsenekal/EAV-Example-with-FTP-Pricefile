@@ -14,11 +14,11 @@ Structure
 
 The structure of the codebase is as follows:
 
-* [Config] All the FTp configuration files should be placed under config.
-* [Core] All core services including FTP and Logging capabilities.
-* [Interfaces] The interfaces for the engines and adapters.
-* [Engine] The concrete classes for FTP, and SFTP will follow suit here.
-* [Adapters] Concrete product classes for CRUD operations on products.
+* **Config** All the FTp configuration files should be placed under config.
+* **Core** All core services including FTP and Logging capabilities.
+* **Interfaces** The interfaces for the engines and adapters.
+* **Engine** The concrete classes for FTP, and SFTP will follow suit here.
+* **Adapters** Concrete product classes for CRUD operations on products.
 
 Installation
 -----------
@@ -27,6 +27,8 @@ This respository folder must be placed on the same level as the Mangento install
 
 Usage
 -----
+
+Run the startup script through the interpreter.
 
 ```
 php genericProductsIntegration.php
