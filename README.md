@@ -1,15 +1,13 @@
-itHub Markup
+EAV Example with Pricefiles from FTP Servers
 =============
 
-This library is the first step of a journey that every markup file in a repository goes on before it is rendered on GitHub.com:
+Magento has an infamous database structure, known as the EAV (Entity Attribute Value) Model which essentially locks a developer into it, as the foreign keys on their tables can number as many as 15 on trivial calls. Tasked with devloping a solution for importing data via FTP, I created this sample project to test the concept. The following is a fully functional FTP-based data integration codebase. 
 
-0. This library converts the raw markup to HTML. See the list of [supported markup formats](#markups) below.
-0. The HTML is sanitized, aggressively removing things that could harm you and your kin—such as `script` tags, inline-styles, and `class` or `id` attributes. See the [sanitization filter](https://github.com/jch/html-pipeline/blob/master/lib/html/pipeline/sanitization_filter.rb) for the full whitelist.
-0. Syntax highlighting is performed on code blocks. See [github/linguist](https://github.com/github/linguist#syntax-highlighting) for more information about syntax highlighting.
-0. The HTML is passed through other filters in the [html-pipeline](https://github.com/jch/html-pipeline) that add special sauce, such as [emoji](https://github.com/jch/html-pipeline/blob/master/lib/html/pipeline/emoji_filter.rb), [task lists](https://github.com/github/task_list/blob/master/lib/task_list/filter.rb), [named anchors](https://github.com/jch/html-pipeline/blob/master/lib/html/pipeline/toc_filter.rb), [CDN caching for images](https://github.com/jch/html-pipeline/blob/master/lib/html/pipeline/camo_filter.rb), and  [autolinking](https://github.com/jch/html-pipeline/blob/master/lib/html/pipeline/autolink_filter.rb).
-0. The resulting HTML is rendered on GitHub.com.
+0. The data is fetched from an FTP location, which is left open at a personal server.
+0. The XML file is retrieved and unzipped.
+0. The adapters write the data to the Magento EAV database.
+0. Everything is logged.
 
-Please see our [contributing guidelines](CONTRIBUTING.md) before reporting an issue.
 
 Markups
 -------
@@ -31,26 +29,12 @@ you wish to run the library. You can also run `script/bootstrap` to fetch them a
 Installation
 -----------
 
-```
-gem install github-markup
-```
+This respository folder must be placed on the same level as the Mangento installation. The genericProductsAdapter has a path which will be specific to an installation on the third line. Then simply run the interpreter.
 
 Usage
 -----
 
-```ruby
-require 'github/markup'
-GitHub::Markup.render('README.markdown', "* One\n* Two")
+```
+php genericProductsIntegration.php
 ```
 
-Or, more realistically:
-
-```ruby
-require 'github/markup'
-GitHub::Markup.render(file, File.read(file))
-```
-
-Contributing
-------------
-
-See [Contributing](CONTRIBUTING.md)
